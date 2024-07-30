@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "certificate";
+    src: url(./Acids/Fonts/Certificate/Certificate.ttf);
+}
+
+@font-face {
+    font-family: "Copperplate-Heavy";
+    src: url(./Acids/Fonts/webfonts_OPTICopperplate-Heavy/OPTICopperplate-Heavy.ttf.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    width: 900px;
+    height: 590px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 7px solid grey;
+    position: relative;
+}
+
+
+.wrapper {
+    height: 500px;
+    margin: 20px 30px;
+    border: 25px solid hsl(238, 48%, 31%);
+}
+
+.text-container {
+    position: relative;
+}
+
+.text-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Acids/Images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 135px;
+    background-position-y: 1px;
+    opacity: 0.08;
+
+}
+
+.arrow {
+    position: absolute;
+    top: calc(4% - 5px);
+    left: 30px;
+    width: 780px;
+    height: 0;
+    pointer-events: none;
+    border-width: 25px 30px 0px 30px;
+    border-style: solid;
+    border-color: hsl(238, 48%, 31%) transparent;
+}
+
+.arrow-2 {
+    position: absolute;
+    top: calc(93% - 5px);
+    left: 30px;
+    width: 780px;
+    height: 0;
+    pointer-events: none;
+    border-width: 0px 30px 25px 30px;
+    border-style: solid;
+    border-color: hsl(238, 48%, 31%) transparent;
+}
+
+.arrow-3 {
+    position: absolute;
+    top: calc(4.9% - 5px);
+    left: 25px;
+    width: 0px;
+    height: 490px;
+    pointer-events: none;
+    border-width: 25px 30px 25px 30px;
+    border-style: solid;
+    border-color: transparent transparent transparent hsl(238, 48%, 31%);
+}
+
+.arrow-4 {
+    position: absolute;
+    top: calc(4.9% - 5px);
+    right: 25px;
+    width: 0px;
+    height: 490px;
+    pointer-events: none;
+    border-width: 25px 30px 25px 30px;
+    border-style: solid;
+    border-color: transparent transparent transparent hsl(238, 48%, 31%);
+    transform: rotate(180deg);
+}
+
+.arrow .main-heading {
+    text-align: center;
+    font-family: "certificate";
+    font-size: 45px;
+    margin-top: 10px;
+    word-spacing: 2px;
+}
+
+.arrow .education {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    word-spacing: 2px;
+}
+
+.arrow .date {
+    margin-right: 5px;
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.arrow span {
+    position: relative;
+    top: -5px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: hsl(243, 22%, 40%);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.342);
+}
+
+.arrow .name {
+    text-align: center;
+    color: hsl(240, 100%, 16%);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Kaushan Script", cursive;
+    letter-spacing: 1px;
+}
+
+.arrow .txt-one {
+    text-align: center;
+    font-family: "certificate";
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.arrow .txt {
+    text-align: center;
+    font-family: "certificate";
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.txt .month {
+    font-size: 22px;
+    padding: 0px 40px 0px 40px;
+    border-bottom: 1px solid black;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 600;
+    color: hsl(240, 100%, 16%);
+}
+
+.arrow .txt-3 {
+    text-align: center;
+    font-family: "certificate";
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.txt-3 .start-end {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 600;
+    color: hsl(240, 100%, 16%);
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    padding: 0px 10px;
+}
+
+.arrow .sub-heading {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 2px;
+    letter-spacing: -1px;
+    color: hsl(240, 100%, 16%);
+    font-family: "Copperplate-Heavy";
+}
+
+.left-side,
+.center {
+    padding-top: 5px;
+    margin-top: 45px;
+    display: inline-block;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-style: italic;
+    margin-left: 30px;
+    border-top: 1px solid rgba(128, 128, 128, 0.39);
+}
+
+.left-side h4,
+.center h4 {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.left-side p,
+.center p {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.center {
+    position: relative;
+    left: 55px;
+}
+
+.right-side {
+    position: absolute;
+    right: 25px;
+    bottom: 0px;
+}
+
+.sign-container {
+    position: relative;
+    bottom: 110px;
+    left: 60px;
+    width: 500px;
+}
+
+.Signature-two {
+    position: relative;
+    left: 140px;
+}
